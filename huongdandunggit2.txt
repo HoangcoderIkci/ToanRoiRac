@@ -1,0 +1,13 @@
+Để đẩy (push) mã nguồn lên GitHub từ máy tính của bạn, bạn có thể làm theo các bước sau:
+
+1. Mở Terminal.
+2. Điều hướng đến thư mục chứa mã nguồn của bạn bằng lệnh `cd <đường_dẫn_đến_thư_mục>`. Ví dụ: `cd /home/user/Documents/repository`.
+3. Kiểm tra trạng thái của repository bằng lệnh `git status`. Đảm bảo rằng bạn đang ở trạng thái "clean" và không có thay đổi chưa được commit.
+4. Nếu có các tệp tin hoặc thư mục mới, hãy thêm chúng vào repository bằng lệnh `git add .` để thêm tất cả, hoặc `git add <tên_tệp_tin>` để chỉ thêm một tệp tin cụ thể.
+5. Tiến hành commit các thay đổi bằng lệnh `git commit -m "Thông điệp commit"`. Thay `"Thông điệp commit"` bằng thông điệp mô tả các thay đổi bạn đã thực hiện.
+6. Đẩy các commit lên GitHub bằng lệnh `git push origin <tên_nhánh>`. Thay `<tên_nhánh>` bằng tên nhánh mà bạn muốn đẩy lên. Mặc định là `master` nếu bạn không sử dụng nhánh khác.
+
+Sau khi quá trình đẩy (push) hoàn tất, mã nguồn của bạn sẽ được cập nhật trên GitHub trong repository tương ứng.
+
+
+token : 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
