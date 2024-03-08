@@ -1,0 +1,41 @@
+### Hướng dẫn về cách sử dụng `globals()` và `getattr()` trong Python:
+
+#### 1. Sử dụng `globals()`:
+- **Mô tả:** `globals()` là một hàm trong Python cho phép truy cập các biến toàn cục theo tên của chúng.
+- **Cách sử dụng:**
+    ```python
+    x = 10
+    print(globals()['x'])  # In ra giá trị của biến x
+    ```
+- **Ví dụ:**
+    ```python
+    x = 10
+    variable_name = 'x'
+    print(globals()[variable_name])  # Output: 10
+    ```
+
+#### 2. Sử dụng `getattr()`:
+- **Mô tả:** `getattr()` là một hàm trong Python cho phép truy cập thuộc tính của một đối tượng theo tên.
+- **Cách sử dụng:**
+    ```python
+    class Example:
+        def __init__(self):
+            self.x = 10
+
+    obj = Example()
+    print(getattr(obj, 'x'))  # In ra giá trị của thuộc tính x của obj
+    ```
+- **Ví dụ:**
+    ```python
+    class Example:
+        def __init__(self):
+            self.x = 10
+
+    obj = Example()
+    attribute_name = 'x'
+    print(getattr(obj, attribute_name))  # Output: 10
+    ```
+
+#### Lưu ý:
+- Khi sử dụng `globals()`, hãy chắc chắn rằng biến bạn muốn truy cập là biến toàn cục.
+- Khi sử dụng `getattr()`, hãy đảm bảo rằng bạn đang truy cập thuộc tính của một đối tượng cụ thể.
